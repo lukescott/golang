@@ -1,11 +1,10 @@
 FROM centos:latest
 
 # SCMs for "go get", gcc for cgo
-RUN apt-get update && apt-get install -y \
-		ca-certificates curl gcc libc6-dev make \
+RUN yum check-update && yum install -y \
+		ca-certificates curl gcc glibc-dev make \
 		bzr git mercurial \
-		--no-install-recommends \
-	&& rm -rf /var/lib/apt/lists/*
+	&& yum clean all
 
 ENV GOLANG_VERSION 1.2.1
 
