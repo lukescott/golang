@@ -2,7 +2,7 @@ FROM centos:latest
 
 # SCMs for "go get", gcc for cgo
 RUN yum check-update && yum install -y \
-		ca-certificates curl gcc glibc-dev make \
+		ca-certificates curl tar gcc glibc-dev make \
 		bzr git mercurial \
 	&& yum clean all
 

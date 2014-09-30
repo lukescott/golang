@@ -1,8 +1,8 @@
 FROM centos:latest
 
 # SCMs for "go get", gcc for cgo
-RUN yum check-update && yum install -y \
-		ca-certificates curl gcc glibc-dev make \
+RUN yum check-update && yum install \
+		ca-certificates curl tar gcc glibc-dev make \
 		bzr git mercurial \
 	&& yum clean all
 
