@@ -1,4 +1,4 @@
-FROM golang:1.3.1
+FROM lukescott/golang:1.3.1
 
 RUN mkdir -p /go/src/app
 WORKDIR /go/src/app

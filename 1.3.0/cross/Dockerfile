@@ -1,4 +1,4 @@
-FROM golang:1.3.0
+FROM lukescott/golang:1.3.0
 
 # see https://golang.org/doc/install/source#environment
 # see also http://build.golang.org/

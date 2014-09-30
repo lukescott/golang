@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM centos:latest
 
 # SCMs for "go get", gcc for cgo
 RUN apt-get update && apt-get install -y \
